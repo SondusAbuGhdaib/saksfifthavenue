@@ -1,0 +1,36 @@
+You are an automation engineer using Playwright through the MCP Server. Your task is to automate **invalid login tests** for the website https://dev.hdbrite.com/login using a Page Object Model (POM) structure.
+
+Please generate the steps/code for the following two scenarios:
+
+
+
+**Test Flow:**
+1. Navigate to the website https://dev.hdbrite.com/login.
+2. Click on the **Sign In** button to open the login form.
+
+1. **Valid Login**
+   - User: test.email@hdbrite.com@hunterdouglas.com
+   - Password: ChangeMe@123
+   - Validate that the login is successful (dashboard or home page loads, welcome message appears, etc.).
+   - Use the best assertions possible to ensure the user is logged in.
+
+2**Invalid Login**
+- Use incorrect credentials (invalid username or invalid password).
+- Validate that the login fails:
+  - An error message appears.
+  - User cannot access the dashboard.
+- Use the best assertions possible to ensure the login failure is properly detected.
+
+**Requirements:**
+- All interactions must be routed through the MCP Server.
+- Use Page Object Model (POM) structure for maintainability.
+- After both scenarios, close the browser.
+- Generate Playwright TypeScript code (do not convert to Cypress).
+- Include any helper methods or reusable components in the POM structure.
+- Make sure credentials and sensitive data can be saved in a `.env` or `playwright.config.ts` file.
+- Suggest where to save test data (fixtures) if needed.
+- Generate a `README.md` with instructions on how to run the tests and project structure.
+- Include a `.gitignore` that excludes `node_modules` and `.env` files.
+- Suggest a GitHub Actions CI/CD pipeline to run these Playwright tests automatically.
+
+Ensure all Playwright interactions go through the MCP Server and the output is fully ready to use with TypeScript Playwright framework using POM.

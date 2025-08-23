@@ -1,8 +1,30 @@
 {
+  "name": "saksfifthavenue",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "test": "playwright test",
+    "test:ui": "playwright test --ui",
+    "test:headed": "playwright test --headed",
+    "test:report": "playwright show-report",
+    "start:mcp": "node --experimental-specifier-resolution=node --loader ts-node/esm mcp.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.17.3",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "playwright": "^1.55.0",
+    "playwright-core": "^1.55.0",
+    "zod": "^3.25.76",
+    "zod-to-json-schema": "^3.24.6"
+  },
   "devDependencies": {
     "@playwright/mcp": "^0.0.22",
     "@playwright/test": "^1.55.0",
-    "@types/node": "^24.3.0"
-  },
-  "scripts": {}
+    "@types/node": "^24.3.0",
+    "dotenv": "^17.2.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  }
 }
