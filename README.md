@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Playwright Test Suite
 
 This project uses [Playwright](https://playwright.dev/) with TypeScript and the Page Object Model (POM) pattern.
@@ -84,3 +85,6 @@ This project uses [Playwright](https://playwright.dev/) with TypeScript and the 
 ---
 
 **Note:** This project is for demonstration and learning purposes.
+=======
+# saksfifthavenue
+>>>>>>> origin/main
