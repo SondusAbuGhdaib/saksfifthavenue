@@ -11,7 +11,7 @@ export default defineConfig({
     screenshot: 'only-on-failure',
     video: 'retain-on-failure',
     storageState: 'storageState.json',
-    baseURL: 'https://dev.hdbrite.com',
+    baseURL: process.env.BASE_URL,
   },
   // ✅ ESM: provide the path as a string
   globalSetup: './global-setup.ts',
