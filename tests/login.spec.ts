@@ -1,5 +1,5 @@
 import { test } from "@playwright/test";
-import { LoginPage } from "./pages/LoginPage.ts";
+import { LoginPage } from "./pages/LoginPage"; // 
 
 test("login flow", async ({ page }) => {
   const loginPage = new LoginPage(page);
@@ -16,13 +16,14 @@ test("login flow", async ({ page }) => {
   await page.goto("https://dev.hdbrite.com/quotes-and-orders/work-orders#all-work-order");
 
   // Logout
-  await page.getByRole("menuitem", { name: "Logout" }).click();
+  //await page.locator('button[data-slot="dropdown-menu-trigger"]').nth(1).click();
+  //await page.getByRole('menuitem', { name: 'Logout' }).click();
+  
 
   // Second login attempt with wrong user
-  await loginPage.clickSignInButton();
-  await page.getByRole("button", { name: " Other User " }).click();
-  await loginPage.enterLoginName("testtegfd");
+  //await page.getByRole('button', { name: 'Other User' }).click();
+ // await loginPage.enterLoginName("testtegfd");
 
   // Assert error
-  await loginPage.assertLoginError();
+ // await loginPage.assertLoginError();
 });

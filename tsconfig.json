@@ -10,6 +10,7 @@
     "isolatedModules": true,
     "verbatimModuleSyntax": true,
     "resolveJsonModule": true,
+    "noEmit": true
   },
-  "include": ["**/*.ts"]
+  "include": ["tests/**/*.ts"]
 }
